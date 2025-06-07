@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #0e29a0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 5% 20%;
+    border-radius: 25px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 3em;
+}
+
+.opcao a img{
+    border-radius: 20px;
+    width: 250px;
+    height: 300px;
+    transition: 0.3 all ease;
+}
+
+.opcao a img:hover{
+    transform: scale(0.9);
+}

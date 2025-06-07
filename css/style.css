@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #0e29a0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.logo{
+    font-family: "PT Serif", serif;
+    color: #fff;
+    font-size: 2em;
+    cursor: default;
+}
+
+.logo img{
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    margin: 5px 15px 0 0;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navbar a{
+    font-family: "PT serif", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+#sobre, #imagens, #diretores, #cursos{
+    background-color: #fff;
+    min-height: 100vh;
+    padding: 2em;
+}
+
+ h2{
+    text-align: center;
+    font-size: 2em;
+    color: #5271ff;
+    margin-top: 1em;
+}
+
+.container{
+    border: 3px solid #39b8f9;
+    background-color: #0e29a0;
+    border-radius: 30px;
+    margin: 1em 8em;
+    padding: 40px 0 200px;
+}
+
+p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+#imagens .galeria {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+}
+
+.imagem-principal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-principal img {
+    min-width: 120%;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #0e29a0;
+}
+
+.imagem-menor {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.imagem-menor img {
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #0e29a0;
+}
+
+
+
+    
+
+
+
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
