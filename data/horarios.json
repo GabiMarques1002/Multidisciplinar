@@ -1,0 +1,58 @@
+{
+    "turmas": [
+        { "id": "1a", "nome": "1º Ano A" },
+        { "id": "1b", "nome": "1º Ano B" },
+        { "id": "2a", "nome": "2º Ano A" },
+        { "id": "2b", "nome": "2º Ano B" },
+        { "id": "3a", "nome": "3º Ano A" }
+    ],
+    
+    "professores": [
+        { "id": "p1", "nome": "Maria Silva", "disciplina": "Matemática" },
+        { "id": "p2", "nome": "João Santos", "disciplina": "Português" },
+        { "id": "p3", "nome": "Ana Oliveira", "disciplina": "História" },
+        { "id": "p4", "nome": "Carlos Mendes", "disciplina": "Geografia" },
+        { "id": "p5", "nome": "Patrícia Lima", "disciplina": "Ciências" },
+        { "id": "p6", "nome": "Ricardo Souza", "disciplina": "Educação Física" }
+    ],
+    
+    "horarios": {
+        "1a": {
+            "segunda": [
+                { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
+                { "horario": "08:20 - 09:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
+                { "horario": "09:30 - 10:20", "disciplina": "História", "professor": "Ana Oliveira", "professorId": "p3" },
+                { "horario": "10:20 - 11:10", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
+            ],
+            "terca": [
+                { "horario": "07:30 - 08:20", "disciplina": "Ciências", "professor": "Patrícia Lima", "professorId": "p5" },
+                { "horario": "08:20 - 09:10", "disciplina": "Educação Física", "professor": "Ricardo Souza", "professorId": "p6" }
+            ]
+        },
+        "2a": {
+            "segunda": [
+                { "horario": "07:30 - 08:20", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
+                { "horario": "08:20 - 09:10", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" }
+            ],
+            "quarta": [
+                { "horario": "07:30 - 08:20", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" },
+                { "horario": "08:20 - 09:10", "disciplina": "História", "professor": "Ana Oliveira", "professorId": "p3" }
+            ]
+        }
+    },
+    
+    "avisos": [
+        {
+            "id": "1",
+            "titulo": "Reunião de Pais",
+            "mensagem": "A reunião de pais será na próxima sexta-feira, às 18h, no pátio da escola.",
+            "data": "2023-10-15T09:00:00"
+        },
+        {
+            "id": "2",
+            "titulo": "Feriado Escolar",
+            "mensagem": "Lembramos que na próxima quarta-feira não haverá aula devido ao feriado municipal.",
+            "data": "2023-10-10T14:30:00"
+        }
+    ]
+}

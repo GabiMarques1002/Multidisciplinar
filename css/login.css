@@ -67,6 +67,10 @@ button:hover{
     background-color: #ddd;
 }
 
+.btn-voltar{
+    color: #fff;
+    background-color: aqua;
+}
 
 .error-message {
     color: red;

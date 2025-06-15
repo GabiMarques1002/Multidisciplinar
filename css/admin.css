@@ -1,0 +1,225 @@
+/* Estilos específicos para o painel admin */
+.container{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #0e29a0;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1{
+    color: white;
+    font-size: 35px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    transition: opacity 0.3s;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: black;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover {
+    color: #0e29a0;
+}
+
+.tab-btn.active {
+    color: #0e29a0;
+    border-bottom-color: #0e29a0;
+    font-weight: 500;
+}
+
+.tab-content {
+    display: none;
+    padding: 1.5rem 0;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Editor de horário */
+.horario-editor {
+    margin: 1.5rem 0;
+}
+
+.horario-editor table {
+    margin-bottom: 1rem;
+}
+
+.horario-editor select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Lista de avisos */
+.avisos-list {
+    margin-top: 2rem;
+}
+
+.aviso-admin-item {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.aviso-admin-item .content {
+    flex: 1;
+}
+
+.aviso-admin-item .actions {
+    margin-left: 1rem;
+}
+
+.aviso-admin-item .btn {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.btn-danger {
+    background-color: red;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Faltas de professores */
+.faltas-container {
+    margin-top: 1.5rem;
+}
+
+.falta-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.falta-item input[type="checkbox"] {
+    margin-right: 1rem;
+    transform: scale(1.5);
+}
+
+.falta-item label {
+    flex: 1;
+    cursor: pointer;
+}
+
+/* Mensagens de status */
+.status-message {
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.status-message.success {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: green;
+    display: block;
+}
+
+.status-message.error {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: red;
+    display: block;
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #0e29a0;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #0e29a0;
+    text-decoration: none;
+}
+
+.error-message {
+    color: red;
+    margin-top: 1rem;
+}

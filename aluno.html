@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do Aluno</title>
-    <link rel="stylesheet" href="./css/aluno.css">
+    <title>Horários Escolares</title>
+    <link rel="stylesheet" href="css/aluno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Área do Aluno</h1>
+            <nav>
+                <a href="./login.html">SAIR</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filters">
+            <select id="turma-select">
+                <option value="">Selecione uma turma</option>
+                <!-- Opções serão preenchidas via JS -->
+            </select>
+            
+            <select id="dia-select">
+                <option value="segunda">Segunda-feira</option>
+                <option value="terca">Terça-feira</option>
+                <option value="quarta">Quarta-feira</option>
+                <option value="quinta">Quinta-feira</option>
+                <option value="sexta">Sexta-feira</option>
+            </select>
+        </section>
+
+        <section class="horario-container">
+            <h2 id="horario-title">Horário da Turma</h2>
+            <div class="horario-table">
+                <!-- Tabela será gerada via JS -->
+            </div>
+        </section>
+
+        <section class="avisos">
+            <h2>Avisos</h2>
+            <div class="avisos-container">
+                <!-- Avisos serão carregados via JS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
