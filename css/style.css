@@ -91,9 +91,48 @@ p{
 }
 
 
+header{
+    background-color: #0e29a0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
-    
 
+.logo{
+    font-family: "PT Serif", serif;
+    color: #fff;
+    font-size: 2em;
+    cursor: default;
+}
+
+.logo img{
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    margin: 5px 15px 0 0;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.navbar a{
+    font-family: "PT serif", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
 
 
 
