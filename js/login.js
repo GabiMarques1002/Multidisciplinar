@@ -8,9 +8,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     errorMessage.textContent = '';
     
     // Verifica as senhas e redireciona
-    if (password === 'aluno123') {
+    if (password === 'AGValuno2025') {
         window.location.href = './aluno.html';
-    } else if (password === 'professor123') {
+    } else if (password === '@@professor123.@@') {
         window.location.href = './professor.html';
     } else if (password === 'escola123') {
         window.location.href = './admin.html';
