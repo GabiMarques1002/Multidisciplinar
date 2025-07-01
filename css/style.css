@@ -15,7 +15,7 @@ main {
 }
 
 h2, h3, h4 {
-    margin-bottom: 1rem;
+    margin-bottom: 3em;
     color: #0e29a0;
 }
 
@@ -38,7 +38,7 @@ h2, h3, h4 {
     background-color: #0e29a0;
     border-radius: 30px;
     margin: 1em 8em;
-    padding: 40px 0 200px;
+    padding: 40px 0 400px;
 }
 
 p{
@@ -57,7 +57,6 @@ p{
 
 #imagens .galeria {
     display: flex;
-    max-width: 1200px;
     width: 100%;
     gap: 20px;
 }
@@ -69,7 +68,7 @@ p{
 }
 
 .imagem-principal img {
-    min-width: 120%;
+    min-width: 100%;
     height: auto;
     border-radius: 20px;
     border: 3px solid #0e29a0;
