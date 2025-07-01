@@ -697,13 +697,13 @@
                 { "horario": "12:00 - 12:50", "disciplina": "Recomposição de Matemática", "professor": "Dionatan & Delane", "professorId": "p4" }
             ],
             "terca": [
-                { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "09:10 - 10:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
+                { "horario": "07:30 - 08:20", "disciplina": "Adm Financeira e Orçamento", "professor": "Janete Crisanto", "professorId": "p1" },
+                { "horario": "08:20 - 09:10", "disciplina": "Adm Financeira e Orçamento", "professor": "Janete Crisanto", "professorId": "p2" },
+                { "horario": "09:10 - 10:00", "disciplina": "Língua Portuguesa", "professor": "Natacha", "professorId": "p2" },
+                { "horario": "10:00 - 10:20", "disciplina": "Interval", "professor": "Intervalo" },
+                { "horario": "10:20 - 11:10", "disciplina": "Liderança e Gestão", "professor": "Adélio", "professorId": "p2" },
+                { "horario": "11:10 - 12:00", "disciplina": "Recursos Humanos", "professor": "Janete Scremin", "professorId": "p2" },
+                { "horario": "12:00 - 12:50", "disciplina": "Recursos Humanos", "professor": "Janete Scremin", "professorId": "p4" }
             ],
             "quarta": [
                 { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
