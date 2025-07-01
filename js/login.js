@@ -12,7 +12,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         window.location.href = './aluno.html';
     } else if (password === '@@professor123.@@') {
         window.location.href = './professor.html';
-    } else if (password === 'escola123') {
+    } else if (password === '@@administradorAGV123.@@') {
         window.location.href = './admin.html';
     } else {
         errorMessage.textContent = 'Senha incorreta. Tente novamente.';
