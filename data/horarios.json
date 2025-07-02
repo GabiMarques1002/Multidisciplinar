@@ -830,54 +830,54 @@
             ]
         },
 
-           "3pt": {
+            "3pt": {
             "segunda": [
-                { "horario": "07:30 - 08:20", "disciplina": "Lingua Portuguesa", "professor": "Natacha", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Projeto de Vida", "professor": "Maria Eduarda", "professorId": "p2" },
-                { "horario": "09:10 - 10:00", "disciplina": "Lingua Portuguesa", "professor": "Natacha", "professorId": "p2" },
+                { "horario": "07:30 - 08:20", "disciplina": "Língua Port", "professor": "Natacha" },
+                { "horario": "08:20 - 09:10", "disciplina": "Projeto de Vida", "professor": "MARIA EDUARDA" },
+                { "horario": "09:10 - 10:00", "disciplina": "Língua Port", "professor": "Natacha" },
                 { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Transporte Marítimo", "professor": "Alexandre", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Matemática", "professor": "Juliana", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Matemática", "professor": "Juliana", "professorId": "p4" }
-            ],
-            "terca": [
-                { "horario": "07:30 - 08:20", "disciplina": "Regulamentação Aduaneira", "professor": "Janete Scremin", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Regulamentação Aduaneira", "professor": "Janete Scremin", "professorId": "p2" },
-                { "horario": "09:10 - 10:00", "disciplina": "Educação Física", "professor": "Mario", "professorId": "p2" },
+                { "horario": "10:20 - 11:10", "disciplina": "Transp Marítimo", "professor": "ALEXANDRE" },
+                { "horario": "11:10 - 12:00", "disciplina": "Matemática", "professor": "JULIANA MAT" },
+                { "horario": "12:00 - 12:50", "disciplina": "Matemática", "professor": "JULIANA MAT" }
+              ],
+             "terça": [
+                { "horario": "07:30 - 08:20", "disciplina": "Regulamentação Aduaneira", "professor": "JANETE SCREMIN REG" },
+                { "horario": "08:20 - 09:10", "disciplina": "Regulamentação Aduaneira", "professor": "JANETE SCREMIN REG" },
+                { "horario": "09:10 - 10:00", "disciplina": "Regulamentação Aduaneira", "professor": "JANETE SCREMIN REG" },
                 { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Legislação Portuária", "professor": "Janete Scremin", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Recomposição de Português", "professor": "Natacha & Raquel", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Recomposição de Português", "professor": "Natacha & Raquel", "professorId": "p4" }
-            ],
-            "quarta": [
-                { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "09:10 - 10:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
+                { "horario": "10:20 - 11:10", "disciplina": "Educação Física", "professor": "CLAUDIA MARIA TED FIN" },
+                { "horario": "11:10 - 12:00", "disciplina": "Leg Port", "professor": "JANETE SCREMIN" },
+                { "horario": "12:00 - 12:50", "disciplina": "Leg Port", "professor": "JANETE SCREMIN" }
+              ],
+              "quarta": [
+                { "horario": "07:30 - 08:20", "disciplina": "Hig e Seg do Trab", "professor": "Lúcio José" },
+                { "horario": "08:20 - 09:10", "disciplina": "Logística de Cargas", "professor": "JANETE SCREMIN" },
+                { "horario": "09:10 - 10:00", "disciplina": "Logística de Cargas", "professor": "JANETE SCREMIN" },
                 { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
-            ],
-            "quinta": [
-                { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "09:10 - 10:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
+                { "horario": "10:20 - 11:10", "disciplina": "Operações com Cargas", "professor": "BRUNO" },
+                { "horario": "11:10 - 12:00", "disciplina": "Operações com Cargas", "professor": "BRUNO" },
+                { "horario": "12:00 - 12:50", "disciplina": "Operações com Cargas", "professor": "BRUNO" }
+              ],
+              "quinta": [
+                { "horario": "07:30 - 08:20", "disciplina": "Transp Marítimo", "professor": "ALEXANDRE" },
+                { "horario": "08:20 - 09:10", "disciplina": "Transp Marítimo", "professor": "ALEXANDRE" },
+                { "horario": "09:10 - 10:00", "disciplina": "Matemática", "professor": "JULIANA MAT" },
                 { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
-            ],
-            "sexta": [
-                { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "09:10 - 10:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
+                { "horario": "10:20 - 11:10", "disciplina": "Ed. Física", "professor": "CLAUDIA MARIA TED FIN" },
+                { "horario": "11:10 - 12:00", "disciplina": "Língua Port", "professor": "NATACHA" },
+                { "horario": "12:00 - 12:50", "disciplina": "P3 RECOMP", "professor": "P3 RECOMP" }
+              ],
+              "sexta": [
+                { "horario": "07:30 - 08:20", "disciplina": "Regulamentação Aduaneira", "professor": "JANETE SCREMIN REG" },
+                { "horario": "08:20 - 09:10", "disciplina": "Regulamentação Aduaneira", "professor": "JANETE SCREMIN REG" },
+                { "horario": "09:10 - 10:00", "disciplina": "Regulamentação Aduaneira", "professor": "JANETE SCREMIN REG" },
                 { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
-            ]
+                { "horario": "10:20 - 11:10", "disciplina": "Adm Portuária", "professor": "MAXWEL" },
+                { "horario": "11:10 - 12:00", "disciplina": "Adm Portuária", "professor": "MAXWEL" },
+                { "horario": "12:00 - 12:50", "disciplina": "Operações com Cargas", "professor": "BRUNO" }
+              ]
         },
-
+        
            "1ds": {
             "segunda": [
                 { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
