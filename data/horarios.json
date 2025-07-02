@@ -745,13 +745,13 @@
                 { "horario": "12:00 - 12:50", "disciplina": "Matemática", "professor": "Patricia", "professorId": "p4" }
             ],
             "terca": [
-                { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
+                { "horario": "07:30 - 08:20", "disciplina": "Português", "professor": "Raquel", "professorId": "p1" },
+                { "horario": "08:20 - 09:10", "disciplina": "Educação Física", "professor": "Juciane", "professorId": "p2" },
                 { "horario": "09:10 - 10:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
                 { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
+                { "horario": "10:20 - 11:10", "disciplina": "Artes", "professor": "André", "professorId": "p2" },
+                { "horario": "11:10 - 12:00", "disciplina": "Língua Inglesa", "professor": "Deise", "professorId": "p2" },
+                { "horario": "12:00 - 12:50", "disciplina": "Projeto de Vida", "professor": "Ana Cristina", "professorId": "p4" }
             ],
             "quarta": [
                 { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
@@ -763,22 +763,22 @@
                 { "horario": "12:00 - 12:50", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
             ],
             "quinta": [
-                { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "09:10 - 10:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
+                { "horario": "07:30 - 08:20", "disciplina": "Informática", "professor": "Luciano", "professorId": "p1" },
+                { "horario": "08:20 - 09:10", "disciplina": "Língua Inglesa", "professor": "Deise", "professorId": "p2" },
+                { "horario": "09:10 - 10:00", "disciplina": "Química", "professor": "Marcelo Vella", "professorId": "p2" },
                 { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
+                { "horario": "10:20 - 11:10", "disciplina": "Química", "professor": "Marcelo Vella", "professorId": "p2" },
+                { "horario": "11:10 - 12:00", "disciplina": "Fisíca", "professor": "Ana Claúdia", "professorId": "p2" },
+                { "horario": "12:00 - 12:50", "disciplina": "Fisíca", "professor": "Ana Claúdia", "professorId": "p4" }
             ],
             "sexta": [
                 { "horario": "07:30 - 08:20", "disciplina": "Matemática", "professor": "Maria Silva", "professorId": "p1" },
-                { "horario": "08:20 - 09:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "09:10 - 10:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
+                { "horario": "08:20 - 09:10", "disciplina": "Educação Financeira", "professor": "Ricardo", "professorId": "p2" },
+                { "horario": "09:10 - 10:00", "disciplina": "Geografia", "professor": "Adélio", "professorId": "p2" },
                 { "horario": "10:00 - 10:20", "disciplina": "Intervalo", "professor": "Intervalo" },
-                { "horario": "10:20 - 11:10", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "11:10 - 12:00", "disciplina": "Português", "professor": "João Santos", "professorId": "p2" },
-                { "horario": "12:00 - 12:50", "disciplina": "Geografia", "professor": "Carlos Mendes", "professorId": "p4" }
+                { "horario": "10:20 - 11:10", "disciplina": "Português", "professor": "Raquel", "professorId": "p2" },
+                { "horario": "11:10 - 12:00", "disciplina": "Português", "professor": "Raquel", "professorId": "p2" },
+                { "horario": "12:00 - 12:50", "disciplina": "Informática", "professor": "Luciano", "professorId": "p4" }
             ]
         },
 
