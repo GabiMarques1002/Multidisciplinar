@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </td>
                 <td>
                     <button type="button" class="btn btn-danger btn-remove-aula">
-                        <i class="fas fa-trash"></i>
+                        X
                     </button>
                 </td>
             </tr>
