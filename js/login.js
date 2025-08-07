@@ -8,11 +8,11 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     errorMessage.textContent = '';
     
     // Verifica as senhas e redireciona
-    if (password === 'AGValuno2025') {
+    if (password === 'aluno2025') {
         window.location.href = './aluno.html';
-    } else if (password === '@@professor123.@@') {
+    } else if (password === 'professor123') {
         window.location.href = './professor.html';
-    } else if (password === '@@administradorAGV123.@@') {
+    } else if (password === 'administrador123') {
         window.location.href = './admin.html';
     } else {
         errorMessage.textContent = 'Senha incorreta. Tente novamente.';
