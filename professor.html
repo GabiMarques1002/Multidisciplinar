@@ -1,81 +1,382 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Professor</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        
+        header {
+            background-color: #0e29a0;
+            color: white;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            border: 2px solid white;
+            border-radius: 8px;
+            padding: 5px;
+            transition: opacity 0.3s;
+        }
+
+        header nav a:hover {
+            opacity: 0.8;
+        }
+
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+        }
+        
+        .card-title {
+            font-size: 1.3rem;
+            color: #0e29a0;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #555;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #0e29a0;
+            outline: none;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .btn {
+            padding: 0.7rem 1.2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-primary {
+            background-color: #0e29a0;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #138a72;
+        }
+        
+        .content-list {
+            list-style: none;
+        }
+        
+        .content-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .content-info {
+            flex: 1;
+        }
+        
+        .content-title {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+        
+        .content-class {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .content-date {
+            font-size: 0.8rem;
+            color: #888;
+        }
+        
+        .content-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .btn-sm {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.9rem;
+        }
+        
+        .btn-edit {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .btn-delete {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        .logout-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Área do Professor</h1>
-            <nav>
-                <a href="#" class="active">Registrar Conteúdo</a>
-                <a href="#" id="logout">Sair</a>
-            </nav>
-        </div>
+        <h1>Área do Professor</h1>
+
+         <nav>
+            <a href="login.html">SAIR</a>
+        </nav>
     </header>
+    
+    <div class="container">
+        <div class="dashboard">
+            <div class="card">
+                <h2 class="card-title">Adicionar Conteúdo</h2>
+                <form id="contentForm">
+                    <div class="form-group">
+                        <label for="contentTitle">Título do Conteúdo</label>
+                        <input type="text" id="contentTitle" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contentSubject">Disciplina</label>
+                        <select id="contentSubject" required>
+                            <option value="">Selecione...</option>
+                            <option value="Matemática">Matemática</option>
+                            <option value="Português">Português</option>
+                            <option value="História">História</option>
+                            <option value="Geografia">Geografia</option>
+                            <option value="Ciências">Ciências</option>
+                            <option value="Física">Física</option>
+                            <option value="Química">Química</option>
+                            <option value="Biologia">Biologia</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contentClass">Turma</label>
+                        <select id="contentClass" required>
+                            <option value="">Selecione...</option>
+                            <option value="1A">1º Ano A</option>
+                            <option value="1B">1º Ano B</option>
+                            <option value="2A">2º Ano A</option>
+                            <option value="2B">2º Ano B</option>
+                            <option value="3A">3º Ano A</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contentDescription">Descrição/Conteúdo</label>
+                        <textarea id="contentDescription" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contentFile">Anexar Arquivo (Opcional)</label>
+                        <input type="file" id="contentFile">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Publicar Conteúdo</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <h2 class="card-title">Meus Conteúdos Publicados</h2>
+                <ul class="content-list" id="contentList">
+                    <!-- Conteúdos serão inseridos aqui via JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    <main class="container">
-        <section class="content-register">
-            <h2>Registro Diário de Conteúdos</h2>
-            
-            <div class="form-group">
-                <label for="conteudo-data">Data:</label>
-                <input type="date" id="conteudo-data" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="conteudo-turma">Turma:</label>
-                <select id="conteudo-turma" required>
-                    <option value="">Selecione a turma</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="conteudo-disciplina">Disciplina:</label>
-                <select id="conteudo-disciplina" required>
-                    <option value="">Selecione a disciplina</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label for="conteudo-titulo">Título do Conteúdo:</label>
-                <input type="text" id="conteudo-titulo" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="conteudo-descricao">Descrição Detalhada:</label>
-                <textarea id="conteudo-descricao" rows="5" required></textarea>
-            </div>
-            
-            <div class="form-group">
-                <label for="conteudo-anexos">Anexos (links separados por vírgula):</label>
-                <input type="text" id="conteudo-anexos" placeholder="https://exemplo.com/material.pdf, https://...">
-            </div>
-            
-            <button id="registrar-conteudo" class="btn">Registrar Conteúdo</button>
-            <div id="conteudo-status" class="status-message"></div>
-        </section>
-        
-        <section class="content-history">
-            <h2>Histórico de Registros</h2>
-            <div class="history-filters">
-                <input type="month" id="history-month">
-                <select id="history-turma">
-                    <option value="">Todas as turmas</option>
-                </select>
-            </div>
-            <div class="history-list">
-                <!-- Gerado via JavaScript -->
-            </div>
-        </section>
-    </main>
+    <script>
+        // Dados dos conteúdos (simulando banco de dados)
+        let teacherContents = JSON.parse(localStorage.getItem('teacherContents')) || [];
 
-    <script src="./js/database.js"></script>
-    <script src="./js/auth.js"></script>
-    <script src="conteudo.js"></script>
+        // Inicialização da página
+        document.addEventListener('DOMContentLoaded', function() {
+            renderContents();
+            setupEventListeners();
+        });
+
+        // Configura os listeners de eventos
+        function setupEventListeners() {
+            // Formulário de conteúdo
+            document.getElementById('contentForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                addContent();
+            });
+            
+            // Botão de logout
+            document.getElementById('logoutBtn').addEventListener('click', function() {
+                if (confirm('Deseja realmente sair do sistema?')) {
+                    window.location.href = 'index.html';
+                }
+            });
+        }
+
+        // Adiciona novo conteúdo
+        function addContent() {
+            const title = document.getElementById('contentTitle').value;
+            const subject = document.getElementById('contentSubject').value;
+            const classGroup = document.getElementById('contentClass').value;
+            const description = document.getElementById('contentDescription').value;
+            const fileInput = document.getElementById('contentFile');
+            const file = fileInput.files[0];
+            
+            const newContent = {
+                id: Date.now(),
+                title,
+                subject,
+                class: classGroup,
+                description,
+                date: new Date().toLocaleDateString(),
+                fileName: file ? file.name : null,
+                teacher: "Professor Atual" // Em um sistema real, pegaria do login
+            };
+            
+            teacherContents.unshift(newContent);
+            saveContents();
+            
+            alert('Conteúdo publicado com sucesso!');
+            document.getElementById('contentForm').reset();
+            renderContents();
+        }
+
+        // Salva conteúdos no localStorage
+        function saveContents() {
+            localStorage.setItem('teacherContents', JSON.stringify(teacherContents));
+        }
+
+        // Renderiza a lista de conteúdos
+        function renderContents() {
+            const contentList = document.getElementById('contentList');
+            contentList.innerHTML = '';
+            
+            if (teacherContents.length === 0) {
+                contentList.innerHTML = '<li style="padding: 1rem; color: #666;">Nenhum conteúdo publicado ainda.</li>';
+                return;
+            }
+            
+            teacherContents.forEach(content => {
+                const li = document.createElement('li');
+                li.className = 'content-item';
+                li.innerHTML = `
+                    <div class="content-info">
+                        <div class="content-title">${content.title}</div>
+                        <div class="content-class">${content.subject} - ${content.class}</div>
+                        ${content.fileName ? `<div class="content-file">Anexo: ${content.fileName}</div>` : ''}
+                        <div class="content-date">Publicado em: ${content.date}</div>
+                    </div>
+                    <div class="content-actions">
+                        <button class="btn btn-sm btn-edit" onclick="editContent(${content.id})">Editar</button>
+                        <button class="btn btn-sm btn-delete" onclick="deleteContent(${content.id})">Excluir</button>
+                    </div>
+                `;
+                contentList.appendChild(li);
+            });
+        }
+
+        // Editar conteúdo
+        function editContent(id) {
+            const content = teacherContents.find(c => c.id === id);
+            if (content) {
+                // Preenche o formulário com os dados do conteúdo
+                document.getElementById('contentTitle').value = content.title;
+                document.getElementById('contentSubject').value = content.subject;
+                document.getElementById('contentClass').value = content.class;
+                document.getElementById('contentDescription').value = content.description;
+                
+                // Remove o conteúdo da lista para evitar duplicação
+                teacherContents = teacherContents.filter(c => c.id !== id);
+                saveContents();
+                renderContents();
+                
+                // Rola a página para o formulário
+                document.getElementById('contentForm').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Excluir conteúdo
+        function deleteContent(id) {
+            if (confirm('Tem certeza que deseja excluir este conteúdo?')) {
+                teacherContents = teacherContents.filter(c => c.id !== id);
+                saveContents();
+                renderContents();
+            }
+        }
+
+        // Simula atualização em tempo real (verifica a cada 5 segundos)
+        setInterval(() => {
+            const updatedContents = JSON.parse(localStorage.getItem('teacherContents')) || [];
+            if (JSON.stringify(updatedContents) !== JSON.stringify(teacherContents)) {
+                teacherContents = updatedContents;
+                renderContents();
+            }
+        }, 5000);
+    </script>
 </body>
 </html>

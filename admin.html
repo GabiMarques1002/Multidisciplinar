@@ -10,7 +10,15 @@
 <body>
     <header>
         <div class="container">
-            <h1>Área do Administração</h1>
+            <h1>Gerenciamento</h1>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="horarios">Horários</button>
+                <button class="tab-btn" data-tab="professores">Professores</button>
+                <button class="tab-btn" data-tab="avisos">Avisos</button>
+            </div>
+            
+            <p>Logado como: Administrador</p>
             <nav>
                 <a href="login.html">SAIR</a>
             </nav>
@@ -19,20 +27,18 @@
 
     <main class="container">
         <section class="admin-actions">
-            <h2>Gerenciamento</h2>
             
-            <div class="tabs">
-                <button class="tab-btn active" data-tab="horarios">Horários</button>
-                <button class="tab-btn" data-tab="professores">Professores</button>
-                <button class="tab-btn" data-tab="avisos">Avisos</button>
-            </div>
+           
 
             <div class="tab-content active" id="horarios-tab">
                 <h3>Editar Horários</h3>
+                
                 <div class="form-group">
-                    <label for="admin-turma">Turma:</label>
-                    <select id="admin-turma">
-                        <!-- Preenchido via JS -->
+                    <label for="admin-periodo">Turma:</label>
+                    <select id="admin-periodo">
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
                     </select>
                 </div>
                 

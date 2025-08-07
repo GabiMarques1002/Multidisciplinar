@@ -3,101 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multidisciplinar</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chango&family=Cherry+Bomb+One&family=Croissant+One&family=Gravitas+One&family=Katibeh&family=Luckiest+Guy&family=Notable&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Sigmar&display=swap" rel="stylesheet">
+    <title>Colégio Técnico Excelência</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background-color: #0e29a0;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            border: 2px solid white;
+            border-radius: 8px;
+            padding: 5px;
+            transition: opacity 0.3s;
+        }
+
+        header nav a:hover {
+            opacity: 0.8;
+        }
+
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Seções */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #0e29a0;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Galeria */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .gallery-item p {
+            padding: 1rem;
+            background: white;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        /* Equipe */
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .team-member img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .team-member-info {
+            padding: 1.5rem;
+        }
+        
+        .team-member-info h3 {
+            margin-bottom: 0.5rem;
+            color: #0e29a0;
+        }
+        
+        .team-member-info p {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        /* Cursos */
+        .courses {
+            background-color: #f1f5f9;
+        }
+        
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .course-category {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        
+        .course-category h3 {
+            color: #0e29a0;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid #eee;
+            font-size: 1.3rem;
+        }
+        
+        .course-list {
+            list-style: none;
+        }
+        
+        .course-list li {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .course-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .course-name {
+            font-weight: 600;
+            color: #0e29a0;
+            margin-bottom: 0.3rem;
+        }
+        
+        .course-desc {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0e29a0;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #3498db;
+        }
+        
+        .copyright {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
+    <!-- Header com link para o login -->
     <header>
-        
-        <a href="#" class="logo"><img class="img-logo" src="./img/logo.png" alt="Logo do AGV">Alberto Gomes Veiga</a>
-    
-        <nav class="navbar">
-            <a href="./funcao.html">LOGIN</a>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo do Colégio">
+            <div class="logo-text">
+                <h1>Colégio Alberto Gomes Veiga</h1>
+                <p>Educação profissional de qualidade</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="login.html">Área de Login</a>
         </nav>
     </header>
-
-    <section id="sobre">
-        <h2>Conheça a nossa escola</h2>
-
-        <div class="container">
-            <p>Bem-vindo ao Colégio Estadual Alberto Gomes Veiga!</p>
-            <p></p>
+    
+    <!-- Cursos Oferecidos -->
+    <section class="section courses">
+        <div class="section-title">
+            <h2>Nossos Cursos Técnicos</h2>
+            <p>Formação profissional de excelência para o mercado de trabalho</p>
         </div>
-    </section>
-
-    <section id="imagens">
-        <div class="galeria">
         
-        <div class="imagem-menor reveal">
-            <img class="reveal" src="./img/cima.jpeg" alt="Miniatura 1">
-            <img class="reveal" src="./img/quadra.jpeg" alt="Miniatura 2">
-            <img class="reveal" src="./img/cima.jpeg" alt="Miniatura 3">
-            <img class="reveal" src="./img/quadra.jpeg" alt="Miniatura 4">
+        <div class="course-grid">
+            <div class="course-category">
+                <h3>Cursos Técnicos Integrados</h3>
+                <ul class="course-list">
+                    <li>
+                        <div class="course-name">Técnico em Portos</div>
+                        <div class="course-desc">Formação para operações portuárias e logística</div>
+                    </li>
+                    <li>
+                        <div class="course-name">Técnico em Administração</div>
+                        <div class="course-desc">Gestão empresarial e processos administrativos</div>
+                    </li>
+                    <li>
+                        <div class="course-name">Técnico em Desenvolvimento de Sistemas</div>
+                        <div class="course-desc">Programação e desenvolvimento de software</div>
+                    </li>
+                    <li>
+                        <div class="course-name">Técnico em Bioeconomia</div>
+                        <div class="course-desc">Sustentabilidade e economia verde</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="course-category">
+                <h3>Cursos Técnicos Subsequentes</h3>
+                <ul class="course-list">
+                    <li>
+                        <div class="course-name">Técnico em Enfermagem</div>
+                        <div class="course-desc">Formação em cuidados de saúde e assistência</div>
+                    </li>
+                    <li>
+                        <div class="course-name">Técnico em Segurança do Trabalho</div>
+                        <div class="course-desc">Prevenção de acidentes e saúde ocupacional</div>
+                    </li>
+                    <li>
+                        <div class="course-name">Técnico em Portos (Subsequente)</div>
+                        <div class="course-desc">Para quem já concluiu o ensino médio</div>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="imagem-principal">
-            <img class="reveal" src="./img/frente.jpeg" alt="Imagem Principal">
-        </div>
-    </div>
     </section>
 
-    <section id="diretores">
-        <h2>Conheça nossos diretores</h2>
-
-        <div class="container">
-            <p>tirza</p>
+        <!-- Equipe Diretiva -->
+    <section class="section">
+        <div class="section-title">
+            <h2>Nossa Equipe</h2>
+            <p>Conheça nossa equipe de diretores</p>
         </div>
-
-        <br>
         
-        <div class="container">
-            <p>Vitor</p>
+        <div class="team">
+            <div class="team-member">
+                <img src="./img/tirza.jpg" alt="Diretor Geral">
+                <div class="team-member-info">
+                    <h3>Tirza</h3>
+                    <p>Diretora Geral</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="diretor-pedagogico.jpg" alt="Diretor Pedagógico">
+                <div class="team-member-info">
+                    <h3>Adriana</h3>
+                    <p>Diretora</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="diretor-administrativo.jpg" alt="Diretor Administrativo">
+                <div class="team-member-info">
+                    <h3>Vitor</h3>
+                    <p>Diretor </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sobre a Escola -->
+    <section class="section">
+        <div class="section-title">
+            <h2>Nossa Estrutura</h2>
+            <p>Conheça as instalações e ambientes de aprendizagem do nosso colégio</p>
+        </div>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./img/frente.jpeg" alt="Fachada do colégio">
+                <p>Fachada principal</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/quadra.jpeg" alt="Quadra">
+                <p>Quadra de Vôlei</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/cima.jpeg" alt="Vista de Cima">
+                <p>Espaço amplo</p>
+            </div>
         </div>
     </section>
 
-    <section id="cursos">
-        <h2>Conhece nossos Cursos Técnicos</h2>
-        <div class="container">
-            <p>Desenvolvimento de Sistemas</p>
+    
+        
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
         </div>
-
-        <br>
-
-        <div class="container">
-            <p>Bioeconomia</p>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <p>Administraçao</p>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <p>Portos</p>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <p>Segurança do trabalho</p>
-        </div>
-
-        <br>
-
-        <div class="container">
-            <p>Enfermagem</p>
-        </div>
-    </section>
-
-
-  <script src="./js/script.js"></script>
+        <p class="copyright">© 2025 Colégio Alberto Gomes Veiga. Todos os direitos reservados.</p>
+        <p class="copyright">Rua Júlia da Costa, 780 - Campo Grande, Paranaguá - PR - CEP: 83203-060</p>
+    </footer>
 
 </body>
 </html>

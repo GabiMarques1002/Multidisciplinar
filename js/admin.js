@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Elementos do DOM
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
-    const turmaSelect = document.getElementById('admin-turma');
+    const periodoSelect = document.getElementById('admin-periodo');
     const diaSelect = document.getElementById('admin-dia');
     const horarioEditor = document.querySelector('.horario-editor');
     const saveBtn = document.getElementById('salvar-horario');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Event listeners
-    turmaSelect.addEventListener('change', loadHorarioEditor);
+    periodoSelect.addEventListener('change', loadHorarioEditor);
     diaSelect.addEventListener('change', loadHorarioEditor);
     saveBtn.addEventListener('click', saveHorario);
     if (avisoForm) {
@@ -74,19 +74,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Preencher dropdown de turmas
     function populateTurmas() {
-        turmaSelect.innerHTML = '<option value="">Selecione uma turma</option>';
+        periodoSelect.innerHTML = '<option value="">Selecione uma turma</option>';
         
         turmas.forEach(turma => {
             const option = document.createElement('option');
             option.value = turma.id;
             option.textContent = turma.nome;
-            turmaSelect.appendChild(option);
+            periodoSelect.appendChild(option);
         });
     }
     
     // Carregar editor de horário
     function loadHorarioEditor() {
-        const turmaId = turmaSelect.value;
+        const turmaId = periodoSelect.value;
         const dia = diaSelect.value;
         
         if (!turmaId) {
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </td>
                 <td>
                     <button type="button" class="btn btn-danger btn-remove-aula">
-                        <i class="fas fa-trash"></i>
+                        X
                     </button>
                 </td>
             </tr>
@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Salvar horário editado
     function saveHorario() {
-        const turmaId = turmaSelect.value;
+        const turmaId = periodoSelect.value;
         const dia = diaSelect.value;
         
         if (!turmaId) {
