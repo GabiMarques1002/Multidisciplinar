@@ -194,7 +194,7 @@
                 { "horario": "16:30 - 17:10", "disciplina": "Geografia", "professor": "Rudolf", "professorId": "p2" },
                 { "horario": "17:10 - 18:00", "disciplina": "Proj de Vida", "professor": "Marcelo Mello", "professorId": "p2" },
                 { "horario": "18:00 - 18:50", "disciplina": "História", "professor": "Valdecir", "professorId": "p4" }
-            ],
+            ]
         },
 
         "2a": {
