@@ -18,6 +18,7 @@ header {
 header h1{
     color: white;
     font-size: 35px;
+    margin-right: 5em;
 }
 
 header .container {
@@ -54,18 +55,14 @@ header nav a:hover {
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    color: black;
+    color: white;
     border-bottom: 3px solid transparent;
     transition: all 0.3s;
 }
 
-.tab-btn:hover {
-    color: #0e29a0;
-}
-
 .tab-btn.active {
-    color: #0e29a0;
-    border-bottom-color: #0e29a0;
+    color: white;
+    border-bottom-color: white;
     font-weight: 500;
 }
 
@@ -76,6 +73,11 @@ header nav a:hover {
 
 .tab-content.active {
     display: block;
+}
+
+ p{
+    font-size: 13px;
+    font-weight: bold;
 }
 
 /* Editor de horário */
@@ -177,20 +179,22 @@ header nav a:hover {
 
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 2rem;
     text-align: left;
+    display: inline;
 }
 
 .form-group label {
-    display: block;
+    display: inline;
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: bold;
+    color: #0e29a0;
 }
 
 .form-group input, 
 .form-group textarea,
 .form-group select {
-    width: 100%;
+    width: 13%;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;

@@ -3,6 +3,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html{
@@ -41,12 +42,22 @@ h2, h3, h4 {
     padding: 40px 0 400px;
 }
 
+h3{
+    color: white;
+}
+
 p{
+    display: flex;
     text-align: center;
     color: #fff;
     font-size: 1.5em;
     display: flex;
     justify-content: center;
+    margin: 0 10em;
+}
+
+p:first-child{
+    padding-top: 5em;
 }
 
 #imagens{
